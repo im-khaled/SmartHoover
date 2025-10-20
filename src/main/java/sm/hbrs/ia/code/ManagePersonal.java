@@ -10,7 +10,7 @@ import java.util.List;
 public interface ManagePersonal {
     public SalesMan createSalesMan( SalesMan record );
 
-    //public EvaluationRecord addPerformanceReord(EvaluationRecord record , String sid );
+    public EvaluationRecord addPerformanceReord(EvaluationRecord record , String sid );
 
     public SalesMan readSalesMan(String sid );
 
@@ -26,8 +26,8 @@ public interface ManagePersonal {
 //
 //    public EvaluationRecord updateEvaluationRecord(@RequestBody EvaluationRecord record, @PathVariable String sid, @PathVariable String rid);
 
-    //public EvaluationRecord readSingleEvaluationRecords(String sid, String rid);
+    public EvaluationRecord readSingleEvaluationRecords(String sid);
 
-    //public List<SalesMan> readAllSalesMan();
+    public List<SalesMan> readAllSalesMan();
 
 }

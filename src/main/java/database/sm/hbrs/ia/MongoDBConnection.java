@@ -5,8 +5,8 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 
 public class MongoDBConnection {
-    private static final String CONNECTION_STRING = "mongodb://localhost:27017"; // adjust if remote
-    private static final String DATABASE_NAME = "salesman"; // change to your DB name
+    private static final String CONNECTION_STRING = "mongodb://localhost:27017"; // need to adjust if cloud
+    private static final String DATABASE_NAME = "salesman"; // My DB name
 
     private static MongoClient mongoClient;
     private static MongoDatabase database;
@@ -25,7 +25,7 @@ public class MongoDBConnection {
     public static void closeConnection() {
         if (mongoClient != null) {
             mongoClient.close();
-            System.out.println("🔌 MongoDB connection closed.");
+            System.out.println("MongoDB connection closed.");
         }
     }
 }
