@@ -91,4 +91,11 @@ public class PersonalController implements ManagePersonal{
         }
         return evaluation;
     }
+    // Deletiong Salesman
+    @Override
+    public void deleteSalesMan(int sid ){
+        database.getCollection(personalCollection).deleteOne(eq("sid", sid));
+        System.out.println(sid +" deleted");
+
+    }
 }
